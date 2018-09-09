@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UniKit - Health Tracker</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="fonts/css/font-awesome.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jquery/jquery-ui.min.js.js"></script>
+    <style>
+        body{
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-light" background="images/white-marble-4-2018.jpg">
+<div class="container">
+
+
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark rounded-bottom">
+        <a class="navbar-brand"  href="#"><img id="img-logo" src="logo.png"></a>
+        <ul class="navbar-nav ml-auto font-weight-bold">
+            <li class="nav-item active"><a class="nav-link" href="Home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="prva.html">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="HealthKit.html">Health Kit</a></li>
+            <li class="nav-item"><a class="nav-link" href="Tutorials.html">Tutorials</a></li>
+            <li class="nav-item"><a class="nav-link" href="Journal.html">Journal</a></li>
+        </ul>
+    </nav>
+    <!-- do tuka navigacija -->
+
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+
+    <ul class="carousel-indicators">
+        <li class="active" data-target="#demo" data-slide-to="0"></li>
+        <li class="active" data-target="#demo" data-slide-to="1"></li>
+        <li class="active" data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+        <!--The slideshow-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/healthy3.jpg" class="img-thumbnail" alt="Healthy3" style="height: 500px; width: 1200px">
+
+
+                <div class="carousel-caption align-bottom">
+                    <h3 class="bg-info pt-1 pb-1 text-light rounded mb-2">The groundwork for all happiness is good health!</h3>
+                    <div class="row mt-2 pt-5">
+                        <div id="button" class="col-2">
+
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign up&nbsp;<span class="fa"><i class="fa fa-user"></i></span></button>
+
+                        </div>
+
+                        <div id="button2" class="col-2">
+
+                            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal2">Sign in&nbsp;<span class="fa"><i class="fa fa-user"></i></span></button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="carousel-item">
+                <img src="images/smooties.jpg" alt="Smoothies" class="img-thumbnail" style="height: 500px; width: 1200px">
+                <div class="carousel-caption align-bottom">
+                    <h3 class="bg-warning pt-1 pb-1 text-light rounded mb-2">A smoothie a day keeps the doctor away !</h3>
+                    <div class="row mt-2 pt-5">
+                        <div  class="col-2">
+
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign up&nbsp;<span class="fa"><i class="fa fa-user"></i></span></button>
+
+                        </div>
+
+                        <div  class="col-2">
+
+                            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal2">Sign in&nbsp;<span class="fa"><i class="fa fa-user"></i></span></button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/woman.png" alt="Woman" class="img-thumbnail" style="height: 500px; width: 1200px">
+                <div class="carousel-caption align-bottom">
+                    <h3 class="bg-info pt-1 pb-1 text-light rounded mb-2">The reason I exercise is for the quality of life I enjoy!</h3>
+                    <div class="row mt-2 pt-5">
+                        <div  class="col-2">
+
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign up&nbsp;<span class="fa"><i class="fa fa-user"></i></span></button>
+
+                        </div>
+
+                        <div  class="col-2">
+
+                            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal2">Sign in&nbsp;<span class="fa"><i class="fa fa-user"></i></span></button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+   </div>
+    <!--carousel-->
+
+
+
+
+
+<div id="pod-carousel">
+
+
+
+
+
+        <div class="row mt-2" id="kopcinja2">
+
+            <!-- SIGN UP -->
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title text-info">Sign up for UniFit&nbsp;<span class="fa"><i class="fa fa-child"></i></span></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body bg-light">
+                    <form>
+                        <img src="logo.png" class="rounded-circle" style="width: 50px;height: 50px;position: relative; margin-left: 210px">
+                    <div class="row mt-3">
+                        <div class="col-xs-6 col-md-6">
+                            <input class="form-control" name="firstname" placeholder="First Name" type="text"
+                                   required autofocus />
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+                        </div>
+                    </div>
+                    <input class="form-control mt-4" name="youremail" placeholder="Your Email" type="email" />
+                    <input class="form-control mt-2" name="reenteremail" placeholder="Re-enter Email" type="email" />
+                    <input class="form-control mt-2 mb-2" name="password" placeholder="New Password" type="password" />
+                    <label for="bday" class="mt-2">Birth Date</label>
+                    <div class="row" id="bday">
+                        <div class="col-xs-4 col-md-4">
+                            <select class="form-control">
+                                <option value="Day">Day</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                            <select class="form-control">
+                                <option value="Month">Month</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                            <select class="form-control">
+                                <option value="Year">Year</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                        <label class="radio-inline mt-4">
+                            <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+                            Male
+                        </label>
+                        <label class="radio-inline mb-4">
+                            <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
+                            Female
+                        </label>
+                        <br>
+                        <button class="btn btn-primary btn-lg" type="submit" style="margin-left: 170px">
+                            Sign up&nbsp;<span class="fa"><i class="fa fa-child"></i></span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- SIGN IN -->
+
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title text-info">Sign in - UniFit&nbsp;<span class="fa"><i class="fa fa-child"></i></span></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body bg-light">
+                    <form>
+                        <img src="logo.png" class="rounded-circle" style="width: 150px;height: 150px;position: relative; margin-left: 150px">
+                    <div class="form-group mt-3">
+                        <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" style="margin-left: 200px">Sign in</button>
+                    </div>
+                    <p class="text-center small"><a href="#">Forgot Password?</a></p>
+
+                        <div class="or mb-4"> or </div>
+
+                    <div class="social-btn text-center">
+                        <a href="#" class="btn btn-primary btn-block btn-md"><i class="fa fa-facebook"></i> Sign in with <b>Facebook</b></a>
+                        <a href="#" class="btn btn-info btn-block btn-md"><i class="fa fa-twitter"></i> Sign in with <b>Twitter</b></a>
+                        <a href="#" class="btn btn-danger btn-block btn-md"><i class="fa fa-google"></i> Sign in with <b>Google</b></a>
+                    </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        </div>
+
+
+
+
+
+
+
+    <div class="row mt-2">
+
+    <div class="col-2">
+    <img src="patterns/sportpattern.jpg" style="height: 500px; width: 600px">
+    </div>
+
+    <div id="latestNews" class="col-7">
+
+            <div class="row">
+                <div class="bg-white ml-1 mr-1" id="pozadina">
+                   <!-- <div class="col-md-6 offset-6 mb-3" id="pozadina"> -->
+                    <h4>Latest News</h4>
+                    <ul class="timeline">
+                        <li>
+                            <a href="#">27 Health and Nutrition Tips</a>
+                            <a href="#" class="float-right">4 September, 2018</a>
+                            <p>
+                                There is a lot of confusion when it comes to health and nutrition.People, even qualified experts, often seem to have the exact opposite opinions.However, despite all the disagreements, there are a few things that are well supported by research.Here are 27 health and nutrition tips that are actually based on good science.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">Exercise and Fitness</a>
+                            <a href="#" class="float-right">4 September, 2018</a>
+                            <p>
+                                Read the latest articles and commentary about exercise and fitness at US News.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">Exercise News, Research</a>
+                            <a href="#" class="float-right">2 September, 2018</a>
+                            <p>
+                                Middle aged adults are exercising more and living longer, but new research from the University of British Columbia suggests that even the fittest among them are...
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+        <div id="prv-del" class=" col-3">
+
+            <div class="btn-group-vertical float-right">
+                <a href="#" class="btn btn-danger mb-1"><i class="fa fa-map-marker"></i> Map your routes </a>
+                <a href="#" class="btn btn-primary mb-1"><i class="fa fa-star"></i> Motivation to improve</a>
+                <a href="#" class="btn btn-danger mb-1"><i class="fa fa-trophy"></i> Compete with friends</a>
+            </div>
+
+
+        </div>
+
+    </div><!--row-->
+
+
+</div>
+<!--pod-carousel-->
+
+
+    <!-- About -->
+    <section class="about-sec parallax-section" id="about">
+        <div class="container mt-3 mb-2">
+            <div class="row p-4">
+                <div class="col-md-3">
+                    <h2><small>Who We Are</small>About<br>
+                        Our Blog</h2>
+                </div>
+                <div class="col-md-4">
+                    <p>To enjoy good health, to bring true happiness to one's family, to bring peace to all, one must first discipline and control one's own mind. If a man can control his mind he can find the way to Enlightenment, and all wisdom and virtue will naturally come to him.</p>
+                    <p>Being in control of your life and having realistic expectations about your day-to-day challenges are the keys to stress management, which is perhaps the most important ingredient to living a happy, healthy and rewarding life.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Our greatest happiness does not depend on the condition of life in which chance has placed us, but is always the result of a good conscience, good health, occupation, and freedom in all just pursuits.</p>
+                    <p><br/><br/></p>
+                    <p><a href="#" class="btn btn-lg btn-dark">Explore More</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div id="footer" class="bg-secondary p-1 rounded-top">
+        <p class="ml-2 pl-2 text-light"><span class="offset-1"><i class="fa fa-female"></i>&nbsp;Veronika, Iva, Marija, Monika&nbsp;<i class="fa fa-female"></i></span> <span class="offset-5">September, 2018&nbsp;<i class="fa fa-group"></i> </span></p>
+    </div>
+
+
+
+</div>
+</body>
+</html>

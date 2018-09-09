@@ -1,0 +1,145 @@
+body{
+
+}
+#journal-body{
+    background-image: image("patterns/blue1.jpg");
+}
+#img-logo{
+    height: 25%;
+    width: 25%;
+}
+#journal-title{
+    text-align: center;
+}
+#journal-fa{
+    height: 50%;
+    width: 50%;
+}
+#card-pic{
+    height: 30%;
+    width: 20%;
+}
+
+.or {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color:grey;
+}
+
+.or:after,
+.or:before {
+    content: "";
+    display: block;
+    background: grey;
+    width: 30%;
+    height:1px;
+    margin: 0 10px;
+}
+ul.timeline {
+     list-style-type: none;
+     position: relative;
+ }
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+#pozadina{
+    background-color: #d1ecf1 ;
+    padding:25px;
+
+}
+#latestNews{
+    position: relative;
+    display: flex;
+
+
+}
+/* ABOUT SECTION
+-------------------------------------------------- */
+.about-sec {
+    background: url('http://grafreez.com/wp-content/temp_demos/burnout/img/para-01.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+.about-sec:before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(22,122,192,0.8);
+    top: 0;
+    left: 0
+}
+.about-sec h2 {
+    font-size: 55px;
+    font-weight: 800;
+    margin-top: 25%;
+}
+.about-sec h2 small {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+.about-sec p {
+    font-size: 16px;
+}
+
+
+.action-sec{width:100%; float:left; background:#222}
+.action-box{float:left; width:100%; text-align:center;}
+.action-box h2{color:#fff; font-size:20px;}
+
+
+.counter {
+    background-color:#f5f5f5;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #4ad1e5;
+}
