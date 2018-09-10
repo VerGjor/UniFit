@@ -36,92 +36,164 @@
     </nav>
 
     <div class="container">
-        <div class="col-md-12 mx-auto bg-light m-3 text-center rounded" style="width: 100%; height: 40px">
-            <i class="btn fa fa-chevron-left align-middle text-monospace text-muted float-md-left"></i>
-            <i class="btn fa fa-chevron-right text-monospace text-muted float-right"></i>
+        <div class="col-md-12 mx-auto m-3 text-center rounded" style="width: 100%; height: 40px">
+            <table class="table rounded table-borderless bg-light text-info">
+                <thead>
+                <tr>
+                    <th><i class="btn fa fa-chevron-left align-middle text-monospace text-muted float-md-left"></i></th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th class="table-active">Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                    <th>
+                        <i class="btn fa fa-chevron-right text-monospace text-muted float-md-right"></i></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="text-muted">
+                    <th></th>
+                    <th>23</th>
+                    <th>24</th>
+                    <th class="table-active">25</th>
+                    <th>26</th>
+                    <th>27</th>
+                    <th>28</th>
+                    <th>29</th>
+                </tr>
+                </tbody>
+            </table>
+
         </div>
     </div>
-    <div class="card-group p-3" >
 
-        <!--Step goals-->
-        <div class="col-lg-5 mx-auto">
-            <div class="card border-info p-3">
-                <i class="fa fa-long-arrow-down"></i>
-                <div class="card-title m-2 mx-auto text-info"><h4 class="font-weight-bold text-monospace">Daily Step Count</h4></div>
-                <div class="card-subtitle  p-1 mx-auto text-info text-monospace font-weight-bold">
-                    6456/10000
-                </div>
-                <div class="card-body">
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated text-monospace" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 75%">65%</div>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-info mx-auto text-monospace" data-toggle="modal" data-target="#updateStepGoals">Update</button>
-                <div class="modal fade" id="updateStepGoals" tabindex="-1" role="dialog" aria-labelledby="updateStepGoals" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="updateStepsTitle">Update daily step goals</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <span class="text-info text-monospace font-weight-bold mr-1">New daily goals:</span>
-                            <input type="number" class="border-secondary rounded">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-info" data-dismiss="modal">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <!--End Of Step goals-->
 
-        <div class="col-lg-5 mx-auto">
-            <div class="card border-info p-3">
-                <div class="card-title m-2 mx-auto text-info"><h4 class="font-weight-bold text-monospace">Daily Step Count</h4></div>
-                <div class="card-subtitle  p-1 mx-auto text-info text-monospace font-weight-bold">
-                    6456/10000
-                </div>
-                <div class="card-body">
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated text-monospace" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 75%">65%</div>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-info mx-auto text-monospace" data-toggle="modal" data-target="#updateStepGoals">Update</button>
-                <div class="modal fade" id="updateSleepGoals" tabindex="-1" role="dialog" aria-labelledby="updateSleepGoals" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="updateSleepTitle">Update daily step goals</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <span class="text-info text-monospace font-weight-bold mr-1">New daily goals:</span>
-                                <input type="number" class="border-secondary rounded">
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-info" data-dismiss="modal">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container rounded " style="margin-top: 100px">
 
+        <table class="table rounded table-border bg-transparent text-info">
+            <tbody>
+            <tr>
+                <th></th>
+                <th class="text-monospace" style="font-size: 30px"><i class="fa fa-bicycle text-info text-center p-2" ></i> Add Workout Session</th>
+                <th>
+                    <i class="btn fa fa-plus-circle text-info text-center p-2" style="font-size: 30px"></i>
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th class="text-monospace" style="font-size: 30px"><i class="fa fa-apple text-info text-center p-2" ></i> Add Breakfast</th>
+                <th>
+                    <i class="btn fa fa-plus-circle text-info text-center p-2" style="font-size: 30px"></i>
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th class="text-monospace" style="font-size: 30px"><i class="fa fa-home text-info text-center p-2" ></i> Add Lunch</th>
+                <th>
+                    <i class="btn fa fa-plus-circle text-info text-center p-2" style="font-size: 30px"></i>
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th class="text-monospace" style="font-size: 30px"><i class="fa fa-glass text-info text-center p-2" ></i> Add Dinner</th>
+                <th>
+                    <i class="btn fa fa-plus-circle text-info text-center p-2" style="font-size: 30px"></i>
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            </tbody>
+        </table>
     </div>
 
+    <div class="container rounded " style="margin-top: 10px">
+
+        <div class="card-group p-3" >
+
+            <!--Start of Coffee Intake-->
+            <div class="col-sm-3 mx-auto">
+                <div class="card border-info p-2">
+                    <i class="fa fa-coffee text-center text-info p-2" style="font-size: 40px"></i>
+                    <div class="card-title m-1 mx-auto text-info"><h4 class="font-weight-bold text-monospace">Coffee intake</h4></div>
+                    <div class="card-text mx-auto text-info" style="font-size: 30px;">0</div>
+                    <i class="btn fa fa-plus-circle text-info text-center p-2" style="font-size: 50px"></i>
+                </div>
+            </div>
+            <!--End of Coffee Intake-->
+
+            <!--Start of Blood Pressure-->
+            <div class="col-sm-3 mx-auto">
+                <div class="card border-info p-3">
+                    <i class="fa fa-heart-o text-info text-center p-2" style="font-size: 50px"></i>
+                    <div class="card-title m-3 mx-auto text-info"><h4 class="font-weight-bold text-monospace">Blood pressure</h4></div>
+                    <button type="button" class="btn btn-info mx-auto text-monospace m-2" data-toggle="modal" data-target="#recordBloodPressure">Record</button>
+                    <div class="modal fade" id="recordBloodPressure" tabindex="-1" role="dialog" aria-labelledby="recordBloodPressure" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
 
 
+                                    <table class="table rounded table-borderless text-info">
+                                        <thead>
+                                        <tr>
+                                            <th><span style="font-size: 20px" class="text-info text-monospace font-weight-bold">Systolic(mmHg)</span></th>
+                                            <th><label>
+                                                <input style="font-size: 15px" type="text" class="border-secondary rounded">
+                                            </label></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th><span style="font-size: 20px" class="text-info text-monospace font-weight-bold">Diastolic(mmHg)</span></th>
+                                            <th><label>
+                                                <input style="font-size: 15px" type="text" class="border-secondary rounded">
+                                            </label></th>
+                                        </tr>
+                                        <tr>
+                                            <th><span style="font-size: 20px" class="text-info text-monospace font-weight-bold">Pulse rate</span></th>
+                                            <th><label>
+                                                <input style="font-size: 15px; width: 50px" type="text" class="border-secondary rounded">  bpm
+                                            </label></th>
+                                        </tr>
 
+                                        <tr>
+                                            <th><span style="font-size: 20px" class="text-info text-monospace font-weight-bold">Medication</span></th>
+                                            <th><label>
+                                                <input style="font-size: 15px" type="text" class="border-secondary rounded">
+                                            </label></th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Insert</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Sleep Info-->
 
+            <!--Start of Water Intake-->
+            <div class="col-sm-3 mx-auto">
+                <div class="card border-info p-2">
+                    <i class="fa fa-tint text-center text-info p-2" style="font-size: 40px"></i>
+                    <div class="card-title m-1 mx-auto text-info"><h4 class="font-weight-bold text-monospace">Water intake</h4></div>
+                    <div class="card-text mx-auto text-info" style="font-size: 30px;">0</div>
+                    <i class="btn fa fa-plus-circle text-info text-center p-2" style="font-size: 50px"></i>
+                </div>
+            </div>
+            <!--End of Water Intake-->
+
+        </div>
+    </div>
 
     <div id="footer" class="bg-secondary p-1 rounded-top">
         <p class="ml-2 pl-2 text-light"><span class="offset-1"><i class="fa fa-female"></i>&nbsp;Veronika, Iva, Marija, Monika&nbsp;<i class="fa fa-female"></i></span> <span class="offset-5">September, 2018&nbsp;<i class="fa fa-group"></i> </span></p>
