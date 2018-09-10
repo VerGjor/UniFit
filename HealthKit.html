@@ -78,28 +78,138 @@
                 <th></th>
                 <th class="text-monospace" style="font-size: 30px"><i class="fa fa-bicycle text-info text-center p-2" ></i> Add Workout Session</th>
                 <th>
-                    <i class="btn fa fa-plus-circle text-info text-center p-2" style="font-size: 30px"></i>
+                    <i class="btn fa fa-plus-circle text-info text-center p-2" data-toggle="modal" data-target="#addWorkoutSession" style="font-size: 30px"></i>
+
+                    <div class="modal fade" id="addWorkoutSession" tabindex="-1" role="dialog" aria-labelledby="addWorkoutSession" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-title m-3"><h4 class="text-center"><i class="fa fa-bicycle text-info p-2" ></i> Add Workout Session</h4></div>
+                                <div class="modal-body">
+                                    <table class="table rounded table-borderless text-info">
+                                        <thead>
+                                        <tr>
+                                            <th><span style="font-size: 20px" class="text-info text-monospace font-weight-bold">Type of session</span></th>
+                                            <th><label>
+                                                <input style="font-size: 15px" type="text" class="border-secondary rounded">
+                                            </label></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th><span style="font-size: 20px" class="text-info text-monospace font-weight-bold">Time of workout</span></th>
+                                            <th><label>
+                                                <input style="font-size: 15px; width: 80px" type="time" class="border-secondary rounded">
+                                            </label></th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Insert</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </th>
             </tr>
             <tr>
                 <th></th>
                 <th class="text-monospace" style="font-size: 30px"><i class="fa fa-apple text-info text-center p-2" ></i> Add Breakfast</th>
                 <th>
-                    <i class="btn fa fa-plus-circle text-info text-center p-2" style="font-size: 30px"></i>
+                    <i class="btn fa fa-plus-circle text-info text-center p-2" data-toggle="modal" data-target="#addBreakfast" style="font-size: 30px"></i>
+
+                    <div class="modal fade" id="addBreakfast" tabindex="-1" role="dialog" aria-labelledby="addBreakfast" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+
+                                <div class="modal-title m-3"><h4 class="text-center"><i class="fa fa-apple text-info p-2" ></i> Add Breakfast</h4></div>
+                                <div class="modal-body">
+
+                                    <table class="table rounded table-borderless text-info">
+                                        <thead>
+                                        <tr>
+                                            <th><span style="font-size: 20px" class="text-info text-monospace font-weight-bold">Enter your meal</span></th>
+                                            <th><label>
+                                                <input style="font-size: 15px" type="text" class="border-secondary rounded">
+                                            </label></th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Insert</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </th>
             </tr>
             <tr>
                 <th></th>
                 <th class="text-monospace" style="font-size: 30px"><i class="fa fa-home text-info text-center p-2" ></i> Add Lunch</th>
                 <th>
-                    <i class="btn fa fa-plus-circle text-info text-center p-2" style="font-size: 30px"></i>
+                    <i class="btn fa fa-plus-circle text-info text-center p-2" data-toggle="modal" data-target="#addLunch" style="font-size: 30px"></i>
+
+                    <div class="modal fade" id="addLunch" tabindex="-1" role="dialog" aria-labelledby="addLunch" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+
+                                <div class="modal-title m-3"><h4 class="text-center"><i class="fa fa-home text-info p-2" ></i> Add Lunch</h4></div>
+                                <div class="modal-body">
+
+                                    <table class="table rounded table-borderless text-info">
+                                        <thead>
+                                        <tr>
+                                            <th><span style="font-size: 20px" class="text-info text-monospace font-weight-bold">Enter your meal</span></th>
+                                            <th><label>
+                                                <input style="font-size: 15px" type="text" class="border-secondary rounded">
+                                            </label></th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Insert</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </th>
             </tr>
             <tr>
                 <th></th>
                 <th class="text-monospace" style="font-size: 30px"><i class="fa fa-glass text-info text-center p-2" ></i> Add Dinner</th>
                 <th>
-                    <i class="btn fa fa-plus-circle text-info text-center p-2" style="font-size: 30px"></i>
+                    <i class="btn fa fa-plus-circle text-info text-center p-2" data-toggle="modal" data-target="#addDinner" style="font-size: 30px"></i>
+                    <div class="modal fade" id="addDinner" tabindex="-1" role="dialog" aria-labelledby="addDinner" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+
+                                <div class="modal-title m-3"><h4 class="text-center"><i class="fa fa-glass text-info p-2" ></i> Add Dinner</h4></div>
+                                <div class="modal-body">
+
+                                    <table class="table rounded table-borderless text-info">
+                                        <thead>
+                                        <tr>
+                                            <th><span style="font-size: 20px" class="text-info text-monospace font-weight-bold">Enter your meal</span></th>
+                                            <th><label>
+                                                <input style="font-size: 15px" type="text" class="border-secondary rounded">
+                                            </label></th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Insert</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </th>
             </tr>
             <tr>
