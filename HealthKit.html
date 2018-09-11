@@ -19,12 +19,34 @@
         body{
             background-size: cover;
         }
+
+        nav, #footer{
+            background: rgba(0,0,0,0.5);
+        }
+
+        .cards-record-bg{
+            background-color: transparent;
+        }
+
+        #img-logo{
+            opacity: 0.7;
+        }
+
+        nav li{
+            opacity: 0.7;
+        }
+
+        #footer p{
+            opacity: 0.8;
+        }
+
+
     </style>
 </head>
 <body background="images/white-marble-4-2018.jpg">
 <div class="container">
 
-    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark rounded-bottom font-weight-bold">
+    <nav class="navbar navbar-expand-lg navbar-dark rounded-bottom font-weight-bold">
         <a class="navbar-brand"  href="#"><img id="img-logo" src="logo.png"></a>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
@@ -32,15 +54,18 @@
             <li class="nav-item active"><a class="nav-link" href="HealthKit.html">Health Kit</a></li>
             <li class="nav-item"><a class="nav-link" href="Tutorials.html">Tutorials</a></li>
             <li class="nav-item"><a class="nav-link" href="Journal.html">Journal</a></li>
+            <li class="nav-item"><a class="nav-link" href="Achievements.html">Achievements</a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="col-md-12 mx-auto m-3 text-center rounded" style="width: 100%; height: 5%">
-            <table class="table rounded table-borderless bg-light text-info">
-                <thead>
+    <div class="container rounded bg-white mx-auto m-3" style="width: 90%;">
+
+            <table class="table rounded table-borderless text-info text-center" style="width: 100%">
+                <tbody>
                 <tr>
-                    <th><i class="btn fa fa-chevron-left align-middle text-monospace text-muted float-md-left"></i></th>
+                    <th>
+                        <i class="btn fa fa-chevron-left align-middle text-monospace text-muted float-md-left"></i>
+                    </th>
                     <th>Mon</th>
                     <th>Tue</th>
                     <th class="table-active">Wed</th>
@@ -51,8 +76,6 @@
                     <th>
                         <i class="btn fa fa-chevron-right text-monospace text-muted float-md-right"></i></th>
                 </tr>
-                </thead>
-                <tbody>
                 <tr class="text-muted">
                     <th></th>
                     <th>23</th>
@@ -62,23 +85,23 @@
                     <th>27</th>
                     <th>28</th>
                     <th>29</th>
+                    <th></th>
                 </tr>
                 </tbody>
             </table>
 
-        </div>
     </div>
 
 
-    <div class="container rounded " >
+    <div class="container rounded" style="width: 80%">
 
-        <table class="table rounded table-border bg-transparent text-info">
+        <table class="table bg-transparent table-borderless">
             <tbody>
             <tr>
                 <th></th>
-                <th class="text-monospace" style="font-size: 150%"><i class="fa fa-google-wallet text-info text-center p-2" ></i> Daily step goal counter
+                <th class="text-monospace text-muted" style="font-size: 125%"><i class="fa fa-google-wallet text-success text-center p-2" ></i> Daily step goal counter
                     <div class="progress" style="width: 100%; margin-left: 6%; margin-top: 2%; margin-bottom: 2%">
-                        <div class="progress-bar-animated progress-bar-striped bg-info" style="width:40%"></div>
+                        <div class="progress-bar-animated progress-bar-striped bg-success" style="width:40%"></div>
                     </div>
                 </th>
                 <th>
@@ -87,14 +110,14 @@
             </tr>
             <tr>
                 <th></th>
-                <th class="text-monospace" style="font-size: 150%"><i class="fa fa-bicycle text-info text-center p-2" ></i> Add Workout Session</th>
+                <th class="text-monospace text-muted" style="font-size: 125%"><i class="fa fa-bicycle text-danger text-center p-2" ></i> Add Workout Session</th>
                 <th>
-                    <i class="btn fa fa-plus-circle text-info text-center p-2" data-toggle="modal" data-target="#addWorkoutSession" style="font-size: 30px"></i>
+                    <i class="btn fa fa-plus-circle text-danger text-center p-2" data-toggle="modal" data-target="#addWorkoutSession" style="font-size: 30px"></i>
 
                     <div class="modal fade" id="addWorkoutSession" tabindex="-1" role="dialog" aria-labelledby="addWorkoutSession" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
-                                <div class="modal-title m-3"><h4 class="text-center"><i class="fa fa-bicycle text-info p-2" ></i> Add Workout Session</h4></div>
+                                <div class="modal-title m-3"><h4 class="text-center text-info"><i class="fa fa-bicycle text-info p-2" ></i> Add Workout Session</h4></div>
                                 <div class="modal-body">
                                     <table class="table rounded table-borderless text-info">
                                         <thead>
@@ -127,7 +150,7 @@
             </tr>
             <tr>
                 <th></th>
-                <th class="text-monospace" style="font-size: 150%"><i class="fa fa-apple text-info text-center p-2" ></i> Add Breakfast</th>
+                <th class="text-monospace text-muted" style="font-size: 125%"><i class="fa fa-apple text-info text-center p-2" ></i> Add Breakfast</th>
                 <th>
                     <i class="btn fa fa-plus-circle text-info text-center p-2" data-toggle="modal" data-target="#addBreakfast" style="font-size: 30px"></i>
 
@@ -135,7 +158,7 @@
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
 
-                                <div class="modal-title m-3"><h4 class="text-center"><i class="fa fa-apple text-info p-2" ></i> Add Breakfast</h4></div>
+                                <div class="modal-title m-3"><h4 class="text-center text-info"><i class="fa fa-apple text-info p-2" ></i> Add Breakfast</h4></div>
                                 <div class="modal-body">
 
                                     <table class="table rounded table-borderless text-info">
@@ -160,18 +183,18 @@
             </tr>
             <tr>
                 <th></th>
-                <th class="text-monospace" style="font-size: 150%"><i class="fa fa-home text-info text-center p-2" ></i> Add Lunch</th>
+                <th class="text-monospace text-muted" style="font-size: 125%"><i class="fa fa-home text-warning text-center p-2" ></i> Add Lunch</th>
                 <th>
-                    <i class="btn fa fa-plus-circle text-info text-center p-2" data-toggle="modal" data-target="#addLunch" style="font-size: 30px"></i>
+                    <i class="btn fa fa-plus-circle text-center text-warning p-2" data-toggle="modal" data-target="#addLunch" style="font-size: 30px"></i>
 
                     <div class="modal fade" id="addLunch" tabindex="-1" role="dialog" aria-labelledby="addLunch" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
 
-                                <div class="modal-title m-3"><h4 class="text-center"><i class="fa fa-home text-info p-2" ></i> Add Lunch</h4></div>
+                                <div class="modal-title m-3"><h4 class="text-center text-info"><i class="fa fa-home p-2" ></i> Add Lunch</h4></div>
                                 <div class="modal-body">
 
-                                    <table class="table rounded table-borderless text-info">
+                                    <table class="table rounded table-borderless ">
                                         <thead>
                                         <tr>
                                             <th><span style="font-size: 20px" class="text-info text-monospace font-weight-bold">Enter your meal</span></th>
@@ -193,14 +216,14 @@
             </tr>
             <tr>
                 <th></th>
-                <th class="text-monospace" style="font-size: 150%"><i class="fa fa-glass text-info text-center p-2" ></i> Add Dinner</th>
+                <th class="text-monospace text-muted" style="font-size: 125%"><i class="fa fa-glass text-primary text-center p-2" ></i> Add Dinner</th>
                 <th>
-                    <i class="btn fa fa-plus-circle text-info text-center p-2" data-toggle="modal" data-target="#addDinner" style="font-size: 30px"></i>
+                    <i class="btn fa fa-plus-circle text-primary text-center p-2" data-toggle="modal" data-target="#addDinner" style="font-size: 30px"></i>
                     <div class="modal fade" id="addDinner" tabindex="-1" role="dialog" aria-labelledby="addDinner" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
 
-                                <div class="modal-title m-3"><h4 class="text-center"><i class="fa fa-glass text-info p-2" ></i> Add Dinner</h4></div>
+                                <div class="modal-title m-3"><h4 class="text-center text-info"><i class="fa fa-glass text-info p-2" ></i> Add Dinner</h4></div>
                                 <div class="modal-body">
 
                                     <table class="table rounded table-borderless text-info">
@@ -238,21 +261,21 @@
 
             <!--Start of Coffee Intake-->
             <div class="col-sm-3 mx-auto">
-                <div class="card border-info p-2">
-                    <i class="fa fa-coffee text-center text-info p-2" style="font-size: 40px"></i>
-                    <div class="card-title m-1 mx-auto text-info"><h4 class="font-weight-bold text-monospace">Coffee intake</h4></div>
-                    <div class="card-text mx-auto text-info" style="font-size: 30px;">0</div>
-                    <i class="btn fa fa-plus-circle text-info text-center p-2" style="font-size: 50px"></i>
+                <div class="card cards-record-bg m-2 border border-warning">
+                    <i class="fa fa-coffee text-center text-warning p-2" style="font-size: 40px"></i>
+                    <div class="card-title m-1 mx-auto text-warning"><h4 class="font-weight-bold text-monospace">Coffee intake</h4></div>
+                    <div class="card-text mx-auto text-warning" style="font-size: 30px;">0</div>
+                    <i class="btn fa fa-plus-circle text-warning text-center p-2" style="font-size: 50px"></i>
                 </div>
             </div>
             <!--End of Coffee Intake-->
 
             <!--Start of Blood Pressure-->
             <div class="col-sm-3 mx-auto">
-                <div class="card border-info p-3">
-                    <i class="fa fa-heart-o text-info text-center p-2" style="font-size: 50px"></i>
-                    <div class="card-title m-3 mx-auto text-info"><h4 class="font-weight-bold text-monospace">Blood pressure</h4></div>
-                    <button type="button" class="btn btn-info mx-auto text-monospace m-2" data-toggle="modal" data-target="#recordBloodPressure">Record</button>
+                <div class="card cards-record-bg m-2 border border-danger">
+                    <i class="fa fa-heart-o text-danger text-center p-2" style="font-size: 50px"></i>
+                    <div class="card-title m-3 mx-auto text-danger"><h4 class="font-weight-bold text-monospace">Blood pressure</h4></div>
+                    <button type="button" class="btn btn-danger mx-auto text-monospace m-2" data-toggle="modal" data-target="#recordBloodPressure">Record</button>
                     <div class="modal fade" id="recordBloodPressure" tabindex="-1" role="dialog" aria-labelledby="recordBloodPressure" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
@@ -304,7 +327,7 @@
 
             <!--Start of Water Intake-->
             <div class="col-sm-3 mx-auto">
-                <div class="card border-info p-2">
+                <div class="card cards-record-bg m-2 border border-info">
                     <i class="fa fa-tint text-center text-info p-2" style="font-size: 40px"></i>
                     <div class="card-title m-1 mx-auto text-info"><h4 class="font-weight-bold text-monospace">Water intake</h4></div>
                     <div class="card-text mx-auto text-info" style="font-size: 30px;">0</div>
@@ -316,7 +339,7 @@
         </div>
     </div>
 
-    <div id="footer" class="bg-secondary p-1 rounded-top">
+    <div id="footer" class="p-1 rounded-top text-monospace">
         <p class="ml-2 pl-2 text-light"><span class="offset-1"><i class="fa fa-female"></i>&nbsp;Veronika, Iva, Marija, Monika&nbsp;<i class="fa fa-female"></i></span> <span class="offset-5">September, 2018&nbsp;<i class="fa fa-group"></i> </span></p>
     </div>
 
