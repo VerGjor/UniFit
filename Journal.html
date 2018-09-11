@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UniKit - Health Tracker</title>
+    <title>UniFit - Health Tracker</title>
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
     <link rel="stylesheet" type="text/css" href="fonts/css/font-awesome.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="jquery/jquery-ui.min.js.js"></script>
     <style>
         body{
             background-size: cover;
@@ -36,19 +42,26 @@
 
     </style>
 </head>
-<body>
+<body background="patterns/bg-1.jpg">
 <div class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-dark rounded-bottom font-weight-bold">
-        <a class="navbar-brand"  href="#"><img id="img-logo" src="logo.png"></a>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="prva.html">Profile</a></li>
-            <li class="nav-item"><a class="nav-link" href="HealthKit.html">Health Kit</a></li>
-            <li class="nav-item"><a class="nav-link" href="Tutorials.html">Tutorials</a></li>
-            <li class="nav-item active"><a class="nav-link" href="Journal.html">Journal</a></li>
-            <li class="nav-item"><a class="nav-link" href="Achievements.html">Achievements</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-collapse navbar-dark rounded-bottom font-weight-bold">
+        <div class="container">
+            <a class="navbar-brand"  href="#"><img id="img-logo" src="logo.png"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prva.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HealthKit.html">Health Kit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tutorials.html">Tutorials</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="Journal.html">Journal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Achievements.html">Achievements</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <div style="text-align: center; height: 50%; width: 50%; margin-bottom: 5.5%" class="journal-bg mx-auto pb-5 rounded-circle">
@@ -58,10 +71,37 @@
         <p class="pt-2">Find the records that you add or track here</p>
     </div>
 
-    <div class="btn modal-dialog-centered float-right text-white" style="margin-top: -10%">
-        <span class="font-weight-bold text-monospace" style="font-size: 200%">New entry&nbsp</span>
-        <i class="fa fa-plus-circle" style="font-size: 210%"></i>
+    <div class="btn modal-dialog-centered float-right text-white" data-toggle="modal" data-target="#newEntry" style="margin-top: -10%">
+        <span class="font-weight-bold text-monospace" style="font-size: 150%">New entry&nbsp</span>
+        <i class="fa fa-plus-circle" style="font-size: 190%"></i>
     </div>
+
+    <div class="modal fade" id="newEntry" tabindex="-1" role="dialog" aria-labelledby="newEntry" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-title m-3"><h4 class="text-center text-info"><i class="fa fa-apple text-info p-2" ></i> Add Breakfast</h4></div>
+                <div class="modal-body">
+
+                    <table class="table rounded table-borderless text-info">
+                        <thead>
+                        <tr>
+                            <th><span style="font-size: 20px" class="text-info text-monospace font-weight-bold">Enter your meal</span></th>
+                            <th><label>
+                                <input style="font-size: 15px" type="text" class="border-secondary rounded">
+                            </label></th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Insert</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div id="footer" class="p-1 rounded-top">
         <p class="ml-2 pl-2 text-light"><span class="offset-1"><i class="fa fa-female"></i>&nbsp;Veronika, Iva, Marija, Monika&nbsp;<i class="fa fa-female"></i></span> <span class="offset-5">September, 2018&nbsp;<i class="fa fa-group"></i> </span></p>
