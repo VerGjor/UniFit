@@ -25,6 +25,8 @@
         }
 
         #img-logo{
+            width: 100%;
+            height: 100%;
             opacity: 0.7;
         }
 
@@ -47,12 +49,12 @@
 
     <nav class="navbar navbar-expand-lg navbar-collapse navbar-dark rounded-bottom font-weight-bold">
         <div class="container">
-            <a class="navbar-brand"  href="#"><img id="img-logo" src="logo.png"></a>
+            <a class="navbar-brand" style="margin: 0; padding: 0; width: 75px; height: 75px;" href="Home.html"><img id="img-logo" src="logo.png"></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-lg-auto text-center">
                     <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="prva.html">Profile</a></li>
                     <li class="nav-item"><a class="nav-link" href="HealthKit.html">Health Kit</a></li>
@@ -64,35 +66,44 @@
         </div>
     </nav>
 
-    <div style="text-align: center; height: 50%; width: 50%; margin-bottom: 5.5%" class="journal-bg mx-auto pb-5 rounded-circle">
-        <h1 class="display-2 text-light mt-5 pt-5" id="journal-title">Journal</h1>
-        <span class="fa pt-5"><i class="fa fa-file-text-o fa-3x"></i></span>
-        <h5 class="pt-3" style="text-align: center">A personal record of your activities</h5>
-        <p class="pt-2">Find the records that you add or track here</p>
+    <div class="row">
+        <div class="container col-lg-6 col-md-9 col-sm-10 col-xs-10">
+            <div style="height: 80%; width: 100%;" class="text-center journal-bg mx-auto m-5 p-5 rounded-circle">
+                <h1 class="display-2 text-light" id="journal-title">Journal</h1>
+                <span class="fa pt-5"><i class="fa fa-file-text-o fa-3x"></i></span>
+                <h5 class="pt-3" style="text-align: center">A personal record of your activities</h5>
+                <p class="pt-2">Find the records that you add or track here</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="float-lg-right">
+                <div class="btn modal-dialog-centered text-white" data-toggle="modal" data-target="#newEntry">
+                    <span class="font-weight-bold text-monospace mx-auto" style="font-size: 140%">New entry&nbsp<i class="fa fa-plus-circle" style="font-size: 120%"></i></span>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="btn modal-dialog-centered float-right text-white" data-toggle="modal" data-target="#newEntry" style="margin-top: -10%">
-        <span class="font-weight-bold text-monospace" style="font-size: 150%">New entry&nbsp</span>
-        <i class="fa fa-plus-circle" style="font-size: 190%"></i>
-    </div>
+
 
     <div class="modal fade" id="newEntry" tabindex="-1" role="dialog" aria-labelledby="newEntry" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
 
-                <div class="modal-title m-3"><h4 class="text-center text-info"><i class="fa fa-apple text-info p-2" ></i> Add Breakfast</h4></div>
+                <div class="modal-title m-3"><h4 class="text-center text-info"><i class="fa fa-apple text-info p-2" ></i> New Entry</h4></div>
                 <div class="modal-body">
 
-                    <table class="table rounded table-borderless text-info">
-                        <thead>
-                        <tr>
-                            <th><span style="font-size: 20px" class="text-info text-monospace font-weight-bold">Enter your meal</span></th>
-                            <th><label>
-                                <input style="font-size: 15px" type="text" class="border-secondary rounded">
-                            </label></th>
-                        </tr>
-                        </thead>
-                    </table>
+                    <div class="form-group">
+                        <label class="text-info font-weight-bold" for="exampleInputPassword1">Title</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Insert title">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="text-info font-weight-bold" for="exampleInputPassword1">Entry</label>
+                        <textarea placeholder="Write a new entry" rows="10" class="form-control"></textarea>
+                    </div>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -103,8 +114,19 @@
     </div>
 
 
-    <div id="footer" class="p-1 rounded-top">
-        <p class="ml-2 pl-2 text-light"><span class="offset-1"><i class="fa fa-female"></i>&nbsp;Veronika, Iva, Marija, Monika&nbsp;<i class="fa fa-female"></i></span> <span class="offset-5">September, 2018&nbsp;<i class="fa fa-group"></i> </span></p>
+    <div id="footer" class="p-1 mt-5 rounded-top">
+        <div class="container ml-2 mt-2 mb-4 pl-2 text-light mx-auto text-center">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 text-lg-left mx-auto">
+                    <span class="ml-lg-5 mx-md-auto mx-sm-auto mx-xs-auto"><i class="fa fa-female"></i>&nbsp;Veronika, Iva, Marija, Monika&nbsp;
+                         <i class="fa fa-female"></i>
+                     </span>
+                </div>
+                <div class="col-xs-12 col-sm-6 text-lg-right text-sm-center text-xs-center">
+                    <span class="mr-lg-5">September, 2018&nbsp;<i class="fa fa-group"></i></span>
+                </div>
+            </div>
+        </div>
     </div>
 
 
