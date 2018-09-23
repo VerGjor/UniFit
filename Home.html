@@ -16,6 +16,40 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="jquery/jquery-ui.min.js.js"></script>
     <style>
+
+        #contact .info-card:hover{
+            border: 1px solid #1c94c4;
+            border-radius: 10px;
+        }
+
+        #contact .info:hover i,
+        #contact .info:hover h4,
+        #contact .info:hover p{
+            color: #1c94c4;
+        }
+
+        #contact .danger-card:hover{
+            border: 1px solid #c4032d;
+            border-radius: 10px;
+        }
+
+        #contact .danger:hover i,
+        #contact .danger:hover h4,
+        #contact .danger:hover p{
+            color: #c4032d;
+        }
+
+        #contact .success-card:hover{
+            border: 1px solid #01c47e;
+            border-radius: 10px;
+        }
+
+        #contact .success:hover i,
+        #contact .success:hover h4,
+        #contact .success:hover p{
+            color: #01c47e;
+        }
+
         body{
             background-size: cover;
         }
@@ -370,6 +404,44 @@
                     <p>Our greatest happiness does not depend on the condition of life in which chance has placed us, but is always the result of a good conscience, good health, occupation, and freedom in all just pursuits.</p>
                     <p><br/><br/></p>
                     <p><a href="#" class="btn btn-lg btn-dark">Explore More</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container mt-5 mx-auto text-center">
+            <h2 class="text-center text-secondary  text-capitalize">contact us</h2>
+             <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 my-5 mx-auto info-card">
+                    <div class="card info border-0 bg-transparent">
+                        <div class="card-body text-center text-secondary">
+                            <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
+                            <h4 class="text-uppercase mb-5">call us</h4>
+                            <p class="info">+389 78 909 809,</p>
+                            <p class="info">+389 78 785 809,</p>
+                            <p class="info">+389 78 936 809,</p>
+                            <p class="info">+389 78 542 809</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-5 mx-auto danger-card">
+                    <div class="card border-0 danger bg-transparent">
+                        <div class="card-body text-center text-secondary">
+                            <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
+                            <h4 class="text-uppercase mb-5">office loaction</h4>
+                            <p>Shekspirova 09, Karposh 2, Skopje, Republic of Macedonia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-5 mx-auto success-card">
+                    <div class="card border-0 success bg-transparent">
+                        <div class="card-body text-center text-secondary">
+                            <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
+                            <h4 class="text-uppercase mb-5">email</h4>
+                            <p>unifit@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
